@@ -1,5 +1,4 @@
 import { getProviders, signIn } from "next-auth/react";
-import Image from "next/image";
 import AppLayout from "../components/AppLayout";
 
 const Login = ({ providers }) => {
@@ -7,9 +6,7 @@ const Login = ({ providers }) => {
     <AppLayout title={"Log in into account"}>
       <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center">
         <div className="mb-7">
-          <Image
-            width="112px"
-            height="112px"
+          <img
             className=" w-28 h-28"
             src="https://links.papareact.com/9xl"
             alt=""

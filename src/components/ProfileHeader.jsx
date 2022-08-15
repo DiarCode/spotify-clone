@@ -1,14 +1,11 @@
 import { ChevronDownIcon, UserCircleIcon } from "@heroicons/react/outline";
 import { signOut } from "next-auth/react";
-import Image from "next/image";
 import React from "react";
 
 const ProfileHeader = ({ user }) => {
   const isUserHasAvatar = Boolean(user?.image);
   const renderedAvatar = isUserHasAvatar ? (
-    <Image
-      width="40px"
-      height="40px"
+    <img
       className="rounded-full w-10 h-10"
       src={user?.image}
       alt=""

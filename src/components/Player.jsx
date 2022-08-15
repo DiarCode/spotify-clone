@@ -9,7 +9,6 @@ import {
   VolumeUpIcon,
 } from "@heroicons/react/solid";
 import { useSession } from "next-auth/react";
-import Image from "next/image";
 import React, { useState, useEffect, useCallback } from "react";
 import { useRecoilState } from "recoil";
 import useSongDetails from "../hooks/useSongDetails";
@@ -96,9 +95,7 @@ const Player = () => {
     <div className="absolute bg-[#121212] border-t-[0.1px] border-t-white/10 bottom-0 left-0 right-0 w-full md:py-4 p-2 md:px-4 flex justify-between items-center">
       <div className="flex space-x-3 items-center">
         <div className="hidden md:inline">
-          <Image
-            width="48px"
-            height="48px"
+          <img
             src={songDetails?.album.images?.[0].url}
             alt=""
             className="hidden md:inline w-12 h-12"

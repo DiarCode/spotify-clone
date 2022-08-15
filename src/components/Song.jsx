@@ -1,5 +1,4 @@
 import { PlayIcon } from "@heroicons/react/solid";
-import Image from "next/image";
 import React, { useState } from "react";
 import { useRecoilState } from "recoil";
 import useSpotify from "../hooks/useSpotify";
@@ -39,9 +38,7 @@ const Song = ({ order, track }) => {
       <div className="flex items-center space-x-4 mr-2">
         <div className="">{renderedPlayButton}</div>
         <div>
-          <Image
-            width="48"
-            height="48"
+          <img
             className="h-12 w-12"
             src={track.album.images[0].url}
             alt=""

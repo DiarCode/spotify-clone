@@ -7,7 +7,6 @@ import { BG_COLORS } from "../lib/bgColors";
 import ProfileHeader from "./profileHeader";
 import useSpotify from "../hooks/useSpotify";
 import SongsList from "./songsList";
-import Image from "next/image";
 
 const Center = () => {
   const { data: session } = useSession();
@@ -34,9 +33,7 @@ const Center = () => {
       <section
         className={`flex items-end space-x-7 bg-gradient-to-b to-black ${color} h-80 text-white p-8`}
       >
-        <Image
-          width="176px"
-          height="176px"
+        <img
           className="h-44 w-44 shadow-2xl"
           src={playlist?.images?.[0]?.url}
           alt=""
