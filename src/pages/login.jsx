@@ -4,11 +4,15 @@ import Image from "next/image";
 const Login = ({ providers }) => {
   return (
     <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center">
-      <img
-        className="mb-7 w-28"
-        src="https://links.papareact.com/9xl"
-        alt="spotify"
-      />
+      <div className="mb-7">
+        <Image
+          width="112px"
+          height="112px"
+          className=" w-28 h-28"
+          src="https://links.papareact.com/9xl"
+          alt="spotify"
+        />
+      </div>
 
       {Object.values(providers).map(provider => (
         <div key={provider.name}>
