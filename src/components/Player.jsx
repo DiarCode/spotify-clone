@@ -63,6 +63,8 @@ const Player = () => {
       <VolumeUpIcon className="w-5 h-5" onClick={handleVolumeButtons} />
     );
 
+  const showPlayer = Boolean(currentSongId) ? "block" : "hidden";
+
   useEffect(() => {
     if (spotifyApi.getAccessToken() && !currentSongId) {
       if (!songDetails) {
@@ -92,7 +94,9 @@ const Player = () => {
   }, [debounceAdjustVolume, volume]);
 
   return (
-    <div className="absolute bg-[#121212] border-t-[0.1px] border-t-white/10 bottom-0 left-0 right-0 w-full md:py-4 p-2 md:px-4 flex justify-between items-center">
+    <div
+      className={`${showPlayer} absolute bg-[#121212] border-t-[0.1px] border-t-white/10 bottom-0 left-0 right-0 w-full md:py-4 p-2 md:px-4 flex justify-between items-center`}
+    >
       <div className="flex space-x-3 items-center">
         <div className="hidden md:inline">
           <img

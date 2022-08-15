@@ -1,5 +1,5 @@
 import { getProviders, signIn } from "next-auth/react";
-import AppLayout from "../components/AppLayout";
+import AppLayout from "../components/appLayout";
 
 const Login = ({ providers }) => {
   return (

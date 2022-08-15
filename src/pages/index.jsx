@@ -1,10 +1,10 @@
 import { getSession, useSession } from "next-auth/react";
 import Router from "next/router";
-import Center from "../components/Center";
-import Player from "../components/Player";
-import Sidebar from "../components/Sidebar";
+import Center from "../components/center";
+import Player from "../components/player";
+import Sidebar from "../components/sidebar";
 import { useEffect, useState } from "react";
-import AppLayout from "../components/AppLayout";
+import AppLayout from "../components/appLayout";
 
 export default function Home() {
   const { data: session } = useSession();
@@ -21,11 +21,7 @@ export default function Home() {
   }, [isUserLoggedIn]);
 
   if (!isPageLoaded) {
-    return (
-      <AppLayout title={"Loading..."}>
-        <div className="bg-black h-screen"></div>
-      </AppLayout>
-    );
+    return <div className="bg-black h-screen"></div>;
   }
 
   return (
