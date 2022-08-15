@@ -11,7 +11,7 @@ const ProfileHeader = ({ user }) => {
       height="40px"
       className="rounded-full w-10 h-10"
       src={user?.image}
-      alt="user"
+      alt=""
     />
   ) : (
     <UserCircleIcon className="w-8 h-8" />

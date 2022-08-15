@@ -39,7 +39,7 @@ const Center = () => {
           height="176px"
           className="h-44 w-44 shadow-2xl"
           src={playlist?.images?.[0]?.url}
-          alt="playlist"
+          alt=""
         />
         <div>
           <p className="text-xs md:text-sm">PLAYLIST</p>

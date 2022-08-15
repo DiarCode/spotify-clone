@@ -10,7 +10,7 @@ const Login = ({ providers }) => {
           height="112px"
           className=" w-28 h-28"
           src="https://links.papareact.com/9xl"
-          alt="spotify"
+          alt=""
         />
       </div>
 
