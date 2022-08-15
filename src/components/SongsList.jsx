@@ -2,7 +2,7 @@ import { ClockIcon } from "@heroicons/react/outline";
 import React from "react";
 import { useRecoilValue } from "recoil";
 import { playlistExcerptState } from "../store/playlistSlice";
-import Song from "./Song";
+import Song from "./song";
 
 const SongsList = () => {
   const playlist = useRecoilValue(playlistExcerptState);

@@ -4,9 +4,9 @@ import { shuffle } from "lodash";
 import { playlistExcerptState, playlistIdState } from "../store/playlistSlice";
 import { useRecoilValue, useRecoilState } from "recoil";
 import { BG_COLORS } from "../lib/bgColors";
-import ProfileHeader from "./ProfileHeader";
+import ProfileHeader from "./profileHeader";
 import useSpotify from "../hooks/useSpotify";
-import SongsList from "./SongsList";
+import SongsList from "./songsList";
 import Image from "next/image";
 
 const Center = () => {

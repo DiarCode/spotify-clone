@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useRecoilState } from "recoil";
-import { UsersIcon } from "@heroicons/react/outline";
-import { signOut, useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import useSpotify from "../hooks/useSpotify";
 import { playlistIdState } from "../store/playlistSlice";
 import { SIDEBAR_LINKS_BOTTOM, SIDEBAR_LINKS_TOP } from "../lib/sidebarLinks";
-import SidebarLink from "./SidebarLink";
+import SidebarLink from "./sidebarLink";
 
 const Sidebar = () => {
   const { data: session } = useSession();
