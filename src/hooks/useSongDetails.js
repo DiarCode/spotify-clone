@@ -9,8 +9,6 @@ const useSongDetails = () => {
   const [currentSongId, setCurrentSongId] = useRecoilState(currentSongIdState);
   const [songDetails, setSongDetails] = useState(null);
 
-  console.log(currentSongId);
-
   useEffect(() => {
     const fetchSongDetails = async () => {
       if (currentSongId) {
